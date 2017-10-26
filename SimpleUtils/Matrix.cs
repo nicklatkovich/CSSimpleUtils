@@ -91,16 +91,16 @@ namespace SimpleUtils {
             set => this[point.X, point.Y] = value;
         }
 
-        public bool DoesNotHaveSameColumns {
+        public bool HaveSameColumns {
             get {
                 for (uint i = 0u; i < _width; i++) {
                     for (uint j = i + 1; j < _width; j++) {
                         if (_columns[i] == _columns[j]) {
-                            return false;
+                            return true;
                         }
                     }
                 }
-                return true;
+                return false;
             }
         }
     }
