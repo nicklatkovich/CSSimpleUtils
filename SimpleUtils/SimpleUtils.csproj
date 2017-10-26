@@ -42,7 +42,7 @@
   <ItemGroup>
     <Compile Include="Matrix.cs" />
     <Compile Include="MatrixColumn.cs" />
-    <Compile Include="SimpleUtils.cs" />
+    <Compile Include="Rand.cs" />
     <Compile Include="SquareMatrix.cs" />
     <Compile Include="UPoint.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
