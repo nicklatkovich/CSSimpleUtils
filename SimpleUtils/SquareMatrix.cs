@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace SimpleUtils {
-    class SquareMatrix<T> : Matrix<T> {
+    public class SquareMatrix<T> : Matrix<T> {
 
         public SquareMatrix(uint size) : base(size, size) {
         }
