@@ -18,6 +18,14 @@ namespace SimpleUtils {
             }
         }
 
+        public static SquareMatrix<K> GetIdentity<K>(uint size, K oneTemplate, K zeroTemplate) {
+            SquareMatrix<K> result = new SquareMatrix<K>(size);
+            SetIdentity(result, oneTemplate, zeroTemplate);
+            return result;
+        }
+
+        public static SquareMatrix<bool> GetIdentity(uint size) => GetIdentity(size, true, false);
+
         public static void SetIdentity(SquareMatrix<bool> matrix) => SetIdentity(matrix, true, false);
 
         public new uint Size => Width;
