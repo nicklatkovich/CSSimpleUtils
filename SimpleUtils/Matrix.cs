@@ -9,6 +9,7 @@ namespace SimpleUtils {
 
         private uint _width;
         private uint _height;
+        public uint Area { get; protected set; }
         private T[ , ] _arr;
         private MatrixColumn<T>[ ] _columns;
         public IReadOnlyCollection<MatrixColumn<T>> Columns { get; protected set; }
@@ -28,6 +29,7 @@ namespace SimpleUtils {
         public Matrix(uint width, uint height) {
             _width = width;
             _height = height;
+            Area = width * height;
             _arr = new T[width, height];
             _columns = new MatrixColumn<T>[width];
             for (uint i = 0u; i < width; i++) {
