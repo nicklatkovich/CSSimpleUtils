@@ -40,6 +40,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Combinatorics.cs" />
+    <Compile Include="Utils.cs" />
     <Compile Include="Matrix.cs" />
     <Compile Include="MatrixColumn.cs" />
     <Compile Include="Rand.cs" />
